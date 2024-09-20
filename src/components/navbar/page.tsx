@@ -11,8 +11,10 @@ const Navbar = () => {
       <div className="list">
         <div>
           <div onClick={() => handleMenu("/")}>Logo</div>
-          {MENU_LIST.map((res) => (
-            <div onClick={() => handleMenu(res.route)}>{res.label}</div>
+          {MENU_LIST.map((res, index) => (
+            <div key={index} onClick={() => handleMenu(res.route)}>
+              {res.label}
+            </div>
           ))}
         </div>
         <div>*</div>
