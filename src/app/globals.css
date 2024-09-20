@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-black: #1b262c; /*(27,38,44)*/
+  --primary-dark: #0f4c75; /*(27,38,44)*/
+  --primary: #3282b8; /*(50,130,184)*/
+  --primary-light: #bbe1fa; /*(187,225,250)*/
+  --primary-white: #f3f6f4; /*(243,246,244)*/
+}
+/* https://www.color-hex.com/color-palette/1050641 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--primary-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

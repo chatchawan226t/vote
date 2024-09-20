@@ -1,0 +1,12 @@
+.container {
+  min-height: 5vh;
+  @apply w-full bg-primary p-1 cursor-pointer;
+}
+
+.container > div:first-child {
+  @apply flex gap-1 justify-between p-[10px];
+}
+
+.container > div:first-child > div:first-child {
+  @apply flex gap-1 justify-between w-[500px];
+}
